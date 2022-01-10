@@ -1,0 +1,7 @@
+{@
+from "./cmd" import (
+    grep,
+    sortlines,
+    sort,
+)
+@}
