@@ -1,7 +1,7 @@
 {@
 from "unix" import grep as ugrep
-from "unix" import cat, sort
-from "unix" import sortlines as _sortlines
+from "unix" import cat, usort
+from "unix" import sortlines as usortlines
 from "text" import join
 
 def grep():
@@ -19,11 +19,12 @@ def grep():
 end
 
 def sortlines():
-    _sortlines(opts.args(1)) # puts($r)
+    usortlines(opts.args(1)) # puts($r)
 end
 
 def ssort():
-    cat(opts.args(1)) # $r.split("\n") # sort($r, { r: opts.has("r") }) #
+    cat(opts.args(1)) # $r.split("\n") # 
+        usort($r, { r: opts.has("r") }) #
         join("\n", $r) # puts($r)
 end
 @}
