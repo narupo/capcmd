@@ -7,10 +7,6 @@ from "text" import join
 
 def grep():
     fname = opts.args(1)
-    if fname == nil:
-        return
-    end
-
     kw = opts.args(2)
     if kw == nil:
         return
