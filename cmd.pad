@@ -1,6 +1,7 @@
 {@
 from "unix" import grep as ugrep
-from "unix" import cat, usort
+from "unix" import cat
+from "unix" import sort as usort
 from "unix" import sortlines as usortlines
 from "text" import join
 
