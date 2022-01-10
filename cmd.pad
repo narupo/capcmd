@@ -1,0 +1,29 @@
+{@
+from "unix" import grep as ugrep
+from "unix" import cat, sort
+from "unix" import sortlines as _sortlines
+from "text" import join
+
+def grep():
+    fname = opts.args(1)
+    if fname == nil:
+        return
+    end
+
+    kw = opts.args(2)
+    if kw == nil:
+        return
+    end
+
+    cat(fname) # ugrep($r, kw) # join("\n", $r) # puts($r)
+end
+
+def sortlines():
+    _sortlines(opts.args(1)) # puts($r)
+end
+
+def ssort():
+    cat(opts.args(1)) # $r.split("\n") # sort($r, { r: opts.has("r") }) #
+        join("\n", $r) # puts($r)
+end
+@}
