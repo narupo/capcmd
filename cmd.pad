@@ -22,7 +22,7 @@ def sortlines():
     usortlines(opts.args(1)) # puts($r)
 end
 
-def ssort():
+def sort():
     cat(opts.args(1)) # $r.split("\n") # 
         usort($r, { r: opts.has("r") }) #
         join("\n", $r) # puts($r)
