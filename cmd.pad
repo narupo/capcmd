@@ -26,6 +26,9 @@ def sort():
 end
 
 def strip():
-    cat(opts.args(1)) # $r.strip() # puts($r)
+    lines = cat(opts.args(1)) # $r.split("\n")
+    for i = 0; i < len(lines); i += 1:
+        puts(lines[i].strip())
+    end
 end
 @}
