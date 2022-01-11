@@ -24,4 +24,8 @@ def sort():
         usort($r, { r: opts.has("r") }) #
         join("\n", $r) # puts($r)
 end
+
+def strip():
+    cat(opts.args(1)) # $r.strip() # puts($r)
+end
 @}
